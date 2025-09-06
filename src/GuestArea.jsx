@@ -21,7 +21,7 @@ export default function GuestArea() {
       <nav className="navbar"><span className="nav-title">Home</span></nav>
       <HeroSection />
       <SampleNumbersSection />
-      <StatsSections />
+      
       <section className="stat-section stat-bg-flow">
         <FlowLine />
       </section>
