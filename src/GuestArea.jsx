@@ -22,9 +22,9 @@ export default function GuestArea() {
       <HeroSection />
       <SampleNumbersSection />
       
-      <section className="stat-section stat-bg-flow">
+      {/* <section className="stat-section stat-bg-flow">
         <FlowLine />
-      </section>
+      </section> */}
        <SectionWithFeatures />
        <ScrollingBar />
        <AboutRace />
