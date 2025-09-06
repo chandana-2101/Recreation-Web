@@ -1,0 +1,82 @@
+.hurdles-stack-section {
+  width: 100vw;
+  min-height: 60vh;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hurdles-gradient-bg {
+  width: 100%;
+  height: 130px;
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* OUTER hurdle */
+.hurdle-outer {
+  position: relative;
+  width: 84vw;
+  max-width: 1160px;
+  margin: 0 auto;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* INTERMEDIATE hurdle */
+.hurdle-inter {
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  width: 70%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* MIDDLE hurdle */
+.hurdle-middle {
+  position: absolute;
+  left: 50%;
+  top: 16%;
+  width: 60%;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* INNER hurdle */
+.hurdle-inner {
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  width: 48%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hurdle-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  background: transparent;
+}

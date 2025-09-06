@@ -1,0 +1,147 @@
+.azproject-root {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background: #131313;
+}
+
+.az-left-poster {
+  width: 50vw; /* Make exactly half */
+  min-width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  position: relative;
+  min-height: 100vh;
+}
+
+.az-poster-frame {
+  width: 96%; /* fills left area nicely */
+  max-width: 900px;
+  aspect-ratio: 4/5;
+  position: relative;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 48px rgba(0,0,0,0.09);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.az-poster-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0; top: 0;
+  z-index: 1;
+}
+.az-poster-letter {
+  width: 86%;
+  height: 86%;
+  object-fit: contain;
+  position: absolute;
+  z-index: 2;
+  left: 7%;
+  top: 8%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.az-poster-meta {
+  position: absolute;
+  font-size: 1.2vw;
+  color: #000;
+  font-family: 'Montserrat', Arial, sans-serif;
+  z-index: 3;
+}
+
+.az-poster-meta.code { left: 14px; top: 12px; font-weight: bold;}
+.az-poster-meta.date { left: 14px; bottom: 24px;}
+.az-poster-meta.city { right: 40px; bottom: 24px;}
+.az-poster-meta.texts {
+  left: 12px;
+  right: 12px;
+  bottom: -58px;
+  font-size: 1vw;
+  color: #222;
+  width: calc(100% - 24px);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  position: absolute;
+}
+
+/* RIGHT SIDE  */
+.az-right {
+  flex: 1;
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.az-letters-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  background: #131313;
+  min-height: 400px; /* Was 300px */
+}
+
+.az-letter-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vw;                  /* Increased from 3.8vw */
+  height: 310px;                   /* Make the grid cells taller */
+  min-height: 110px;               /* Ensures on smaller screens still big */
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #fff;
+  background: #131313;
+  border: 1.5px solid #262628;
+  cursor: pointer;
+  transition: background 0.15s, color 0.18s;
+}
+
+.az-letter-cell.active, .az-letter-cell:hover {
+  background: #fff;
+  color: #262628;
+}
+
+.az-project-desc {
+  padding: 36px 28px 36px 46px;
+  color: #b79afe;
+  font-family: 'Montserrat', Arial, sans-serif;
+  letter-spacing: 1px;
+  background: #181718;
+  min-height: 170px;
+}
+
+.az-project-title {
+  font-size: 2vw;
+  font-weight: bold;
+  color: #b79afe;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+}
+
+.az-project-text {
+  color: #fff;
+  font-size: 1.4vw;
+}
+
+@media (max-width: 900px) {
+  .azproject-root { flex-direction: column; }
+  .az-left-poster { width: 100vw; min-height: 260px; }
+  .az-right { min-width: 100vw; }
+  .az-poster-frame { width: 98vw; }
+  .az-letter-cell { font-size: 8vw; height: 74px; min-height: 58px; }
+  .az-project-title { font-size: 4vw; }
+  .az-project-desc { padding: 20px; }
+  .az-poster-meta, .az-poster-meta.texts { font-size: 2vw;}
+}

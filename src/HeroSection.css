@@ -1,0 +1,59 @@
+.hero-bg {
+  position: relative;
+  min-height: calc(100vh - 100px);
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 64px;
+  padding-top: 100px;
+  height: 100%;
+  width: 60vw;
+  min-width: 320px;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 6vw;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 36px;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+}
+
+.hero-desc {
+  font-size: 2vw;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 50px;
+  line-height: 1.1;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+}
+
+.getstarted-btn {
+  background: #f6f;
+  border: none;
+  color: #222;
+  padding: 20px 48px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.getstarted-btn:hover {
+  background: #e291ed;
+}
