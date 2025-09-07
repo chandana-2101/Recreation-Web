@@ -1,4 +1,4 @@
-/* Container */
+
 .project-showcase-section {
   width: 100vw;
   min-height: 75vh;
@@ -11,7 +11,6 @@
   justify-content: flex-end;
 }
 
-/* Header */
 .project-showcase-header {
   display: flex;
   justify-content: space-between;
@@ -20,7 +19,6 @@
   z-index: 2;
 }
 
-/* Titles and client with slide/fade animation */
 @keyframes textFadeLeft {
   from {
     opacity: 0;
@@ -58,7 +56,6 @@
   animation-delay: 0.38s;
 }
 
-/* FAB pop in animation */
 @keyframes fabPop {
   from {
     opacity: 0;
@@ -87,7 +84,6 @@
   animation: fabPop 1s cubic-bezier(.55, 1.39, .6, 1.03) 0.65s forwards;
 }
 
-/* Project Image slide/fade-in */
 @keyframes imageRevealUp {
   from {
     opacity: 0;
@@ -115,7 +111,6 @@
   animation: imageRevealUp 1.2s cubic-bezier(.38, 1.18, .63, 1.09) 0.28s forwards;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .project-title {
     font-size: 7vw;

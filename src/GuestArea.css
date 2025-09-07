@@ -1,4 +1,4 @@
-/* Full width container */
+
 .guestarea-main {
   width: 100vw;
   min-height: 100vh;
@@ -6,10 +6,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-  background: #fff; /* Light background for contrast */
+  background: #fff; 
 }
 
-/* Rounded orange nav bar */
 .navbar {
   width: 100%;
   max-width: 1800px;

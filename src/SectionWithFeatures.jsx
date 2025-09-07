@@ -39,7 +39,6 @@ export default function SectionWithFeatures() {
       </div>
 
       <div className="center-features">
-        {/* Left list */}
         <ul className="features-list left">
           {featuresLeft.map((item, i) => (
             <li key={i}>
@@ -48,14 +47,12 @@ export default function SectionWithFeatures() {
             </li>
           ))}
         </ul>
-        {/* Centered circuit/icon */}
         <div className="icon-circle-wrapper">
           <img src={circuitImg} alt="circuit" className="circuit-pattern" />
           <div className="icon-center">
             <img src={iconImg} alt="icon" />
           </div>
         </div>
-        {/* Right list */}
         <ul className="features-list right">
           {featuresRight.map((item, i) => (
             <li key={i}>

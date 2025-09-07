@@ -20,7 +20,6 @@
   pointer-events: none;
 }
 
-/* OUTER hurdle */
 .hurdle-outer {
   position: relative;
   width: 84vw;
@@ -32,7 +31,6 @@
   justify-content: center;
 }
 
-/* INTERMEDIATE hurdle */
 .hurdle-inter {
   position: absolute;
   left: 50%;
@@ -45,7 +43,7 @@
   justify-content: center;
 }
 
-/* MIDDLE hurdle */
+
 .hurdle-middle {
   position: absolute;
   left: 50%;
@@ -58,7 +56,6 @@
   justify-content: center;
 }
 
-/* INNER hurdle */
 .hurdle-inner {
   position: absolute;
   left: 50%;

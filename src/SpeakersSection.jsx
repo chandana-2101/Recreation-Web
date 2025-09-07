@@ -1,7 +1,6 @@
 import React from "react";
 import "./SpeakersSection.css";
 
-// Speaker data (add LinkedIn URLs if you have them)
 const SPEAKERS = [
   {
     name: "Harry Williams",
@@ -54,7 +53,7 @@ const SPEAKERS = [
 ];
 
 export default function SpeakersSection() {
-  // Split speakers into two columns for 2-col layout
+  
   const col1 = [SPEAKERS[0], SPEAKERS[2], SPEAKERS[4], SPEAKERS[6]];
   const col2 = [SPEAKERS[1], SPEAKERS[3], SPEAKERS[5], SPEAKERS[7]];
   return (

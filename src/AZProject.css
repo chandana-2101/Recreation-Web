@@ -6,7 +6,7 @@
 }
 
 .az-left-poster {
-  width: 50vw; /* Make exactly half */
+  width: 50vw; 
   min-width: 360px;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .az-poster-frame {
-  width: 96%; /* fills left area nicely */
+  width: 96%; 
   max-width: 900px;
   aspect-ratio: 4/5;
   position: relative;
@@ -75,7 +75,7 @@
   position: absolute;
 }
 
-/* RIGHT SIDE  */
+
 .az-right {
   flex: 1;
   background: #131313;
@@ -90,16 +90,16 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 0;
   background: #131313;
-  min-height: 400px; /* Was 300px */
+  min-height: 400px; 
 }
 
 .az-letter-cell {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4vw;                  /* Increased from 3.8vw */
-  height: 310px;                   /* Make the grid cells taller */
-  min-height: 110px;               /* Ensures on smaller screens still big */
+  font-size: 4vw;                  
+  height: 310px;                   
+  min-height: 110px;               
   font-family: 'Montserrat', Arial, sans-serif;
   color: #fff;
   background: #131313;

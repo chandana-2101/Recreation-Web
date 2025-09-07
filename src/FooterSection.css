@@ -41,7 +41,7 @@
   font-size: 1.9em;
 }
 
-/* Footer main alignment fix */
+
 .footer-main {
   width: 100%;
   max-width: 1350px;
@@ -51,7 +51,6 @@
   align-items: flex-start;
   padding: 52px 6vw 28px 4vw;
   gap: 36px;
-  /* Remove flex-wrap: wrap to avoid unwanted new rows on desktop */
   flex-wrap: nowrap;
 }
 
@@ -102,7 +101,7 @@
 }
 
 .footer-nav-text {
-  font-size: 1.4rem; /* change font size for all 9 text divs */
+  font-size: 1.4rem; 
   color: #fff;
   font-weight: 400;
   line-height: 1.4;
@@ -137,8 +136,6 @@
   margin-top: 0.15em;
 }
 
-
-/* Responsive: Stack columns on mobile */
 @media (max-width: 900px) {
   .footer-title { font-size: 2.2rem; }
   .footer-newsletter { padding: 36px 2vw 30px 2.4vw; }

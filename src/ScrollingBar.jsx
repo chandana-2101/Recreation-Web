@@ -1,8 +1,8 @@
 import React from "react";
 import "./ScrollingBar.css";
 
-const iconUrl = process.env.PUBLIC_URL + "/Demo.jpg"; // Make sure this file is in public folder
-const items = Array(10).fill("HURDLES"); // Repeat as needed for a seamless scroll
+const iconUrl = process.env.PUBLIC_URL + "/Demo.jpg";
+const items = Array(10).fill("HURDLES"); 
 
 export default function ScrollingBar() {
   return (

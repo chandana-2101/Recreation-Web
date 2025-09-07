@@ -16,7 +16,7 @@ const backgrounds = [
 export default function StatsSection() {
   return (
     <div className="stats-page-root">
-      {/* Curved dashed connecting line */}
+     
       <svg
         className="stats-curve-connection"
         viewBox="0 0 1440 3900"
@@ -39,7 +39,7 @@ export default function StatsSection() {
           strokeDasharray="16 16"
         />
       </svg>
-      {/* Stats sections as before */}
+     
       {stats.map((stat, idx) => (
         <section key={idx} className={`stat-long-section ${backgrounds[idx % backgrounds.length]}`}>
           <div className="stat-main">
